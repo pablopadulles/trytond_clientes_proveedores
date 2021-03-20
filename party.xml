@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+<!--        Clientes    -->
+        <record model="ir.ui.view" id="cliente_view_form">
+            <field name="model">party.party</field>
+            <field name="type">form</field>
+            <field name="name">cliente_form</field>
+        </record>
+        <record model="ir.ui.view" id="cliente_view_tree">
+            <field name="model">party.party</field>
+            <field name="type">tree</field>
+            <field name="name">cliente_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_win_cliente">
+            <field name="name">Cliente</field>
+            <field name="res_model">party.party</field>
+            <field name="context"
+                eval="{'cliente': True}" pyson="1"/>
+            <field name="domain"
+                eval="[('cliente', '=', True)]"
+                pyson="1"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_win_v_cliente_view_tree">
+            <field name="sequence" eval="9"/>
+            <field name="view" ref="cliente_view_tree"/>
+            <field name="act_window" ref="act_win_cliente"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_win_v_cliente_view_form">
+            <field name="sequence" eval="19"/>
+            <field name="view" ref="cliente_view_form"/>
+            <field name="act_window" ref="act_win_cliente"/>
+        </record>
+
+        <menuitem sequence="1" id="menu_cliente" action="act_win_cliente"/>
+
+<!--        Proveedores -->
+        <record model="ir.ui.view" id="proveedores_view_form">
+            <field name="model">party.party</field>
+            <field name="type">form</field>
+            <field name="name">proveedores_form</field>
+        </record>
+        <record model="ir.ui.view" id="proveedores_view_tree">
+            <field name="model">party.party</field>
+            <field name="type">tree</field>
+            <field name="name">proveedores_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_win_proveedores">
+            <field name="name">Proveedores</field>
+            <field name="res_model">party.party</field>
+            <field name="context"
+                eval="{'proveedor': True}" pyson="1"/>
+            <field name="domain"
+                eval="[('proveedor', '=', True)]"
+                pyson="1"/>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_win_v_proveedores_view_tree">
+            <field name="sequence" eval="9"/>
+            <field name="view" ref="proveedores_view_tree"/>
+            <field name="act_window" ref="act_win_proveedores"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_win_v_proveedores_view_form">
+            <field name="sequence" eval="19"/>
+            <field name="view" ref="proveedores_view_form"/>
+            <field name="act_window" ref="act_win_proveedores"/>
+        </record>
+
+        <menuitem sequence="2" id="menu_proveedores" action="act_win_proveedores"/>
+
+<!--        Todos   -->
+        <record model="ir.ui.view" id="party_view_form">
+            <field name="model">party.party</field>
+            <field name="type">form</field>
+            <field name="name">party_form</field>
+        </record>
+        <record model="ir.ui.view" id="party_view_tree">
+            <field name="model">party.party</field>
+            <field name="type">tree</field>
+            <field name="name">party_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_win_party">
+            <field name="name">Terceros</field>
+            <field name="res_model">party.party</field>
+        </record>
+
+        <record model="ir.action.act_window.view" id="act_win_v_party_view_tree">
+            <field name="sequence" eval="9"/>
+            <field name="view" ref="party_view_tree"/>
+            <field name="act_window" ref="act_win_party"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_win_v_party_view_form">
+            <field name="sequence" eval="19"/>
+            <field name="view" ref="party_view_form"/>
+            <field name="act_window" ref="act_win_party"/>
+        </record>
+
+        <menuitem sequence="3" id="menu_party" action="act_win_party"/>
+
+    </data>
+</tryton>

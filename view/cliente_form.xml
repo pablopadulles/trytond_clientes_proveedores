@@ -7,5 +7,5 @@ this repository contains the full copyright notices and license terms. -->
     <newline/>
     <field name="addresses" mode="form,tree" colspan="4"
                 view_ids="party.address_view_form,party.address_view_tree_sequence"/>
-    <field name="cliente" invisible="True"/>
+    <field name="cliente" invisible="1"/>
 </form>

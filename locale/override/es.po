@@ -286,25 +286,13 @@ msgctxt "model:stock.shipment.in.return,name:stock."
 msgid "Supplier Return Shipment"
 msgstr "Remito devolución Entrada"
 
-msgctxt "model:stock.shipment.in.return.assign.failed,name:stock."
-msgid "Assign Supplier Return Shipment"
-msgstr "Reservar remito de devolución de Entrada"
-
 msgctxt "model:stock.shipment.internal,name:stock."
 msgid "Internal Shipment"
 msgstr "Remito interno"
 
-msgctxt "model:stock.shipment.internal.assign.failed,name:stock."
-msgid "Assign Shipment Internal"
-msgstr "Reservar remito interno"
-
 msgctxt "model:stock.shipment.out,name:stock."
 msgid "Customer Shipment"
 msgstr "Remitos Salida"
-
-msgctxt "model:stock.shipment.out.assign.failed,name:stock."
-msgid "Assign Customer Shipment"
-msgstr "Reservar remito de Salida"
 
 msgctxt "model:stock.shipment.out.return,name:stock."
 msgid "Customer Return Shipment"
@@ -357,4 +345,3 @@ msgstr "Remitos de Salida"
 msgctxt "model:ir.ui.menu,name:stock.menu_shipment_out_return_form"
 msgid "Customer Return Shipments"
 msgstr "Remitos de devolución de Salida"
-

@@ -9,6 +9,6 @@ this repository contains the full copyright notices and license terms. -->
                 view_ids="party.address_view_form,party.address_view_tree_sequence"/>
     <field name="contact_mechanisms" colspan="2"
                 view_ids="party.contact_mechanism_view_tree_sequence"/>
-    <field name="proveedor" invisible="True"/>
+    <field name="proveedor" invisible="1"/>
 
 </form>
